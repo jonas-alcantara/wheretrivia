@@ -10,6 +10,18 @@
 </head>
 
 <body>
+    <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId            : '2084227675196220',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v10.0'
+          });
+        };
+      </script>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+        
     <nav class="main-nav">
         <div class="main-nav__header main-nav__item">
             <a href="index.html" aria-label="A link to Where Trivia's home page.">
@@ -40,8 +52,8 @@
             <span class="main-nav__share-label">Share</span>
         </div>
         <div class="main-nav__item media-nav__item">
-            <a href="#" target="_blank" class="main-nav__media-icon"
-                aria-label="A link to where trivia's facebook page">
+            <a href="#" id="fb_share_btn"
+                target="_blank" class="main-nav__media-icon" aria-label="A link to where trivia's facebook page">
                 <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook"
                     class="svg-inline--fa fa-facebook fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512">
@@ -51,6 +63,15 @@
                 </svg>
             </a>
         </div>
+        <script>
+            document.getElementById('fb_share_btn').onclick = function () {
+                FB.ui({
+                    display: 'popup',
+                    method: 'share',
+                    href: 'https://developers.facebook.com/docs/',
+                }, function (response) { });
+            }
+        </script>
         <div class="main-nav__item media-nav__item">
             <a href="#" target="_blank" class="main-nav__media-icon" aria-label="A link to where trivia's twitter page">
                 <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
