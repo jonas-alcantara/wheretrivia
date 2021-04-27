@@ -11,17 +11,17 @@
 
 <body>
     <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            appId            : '2084227675196220',
-            autoLogAppEvents : true,
-            xfbml            : true,
-            version          : 'v10.0'
-          });
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '2084227675196220',
+                autoLogAppEvents: true,
+                xfbml: true,
+                version: 'v10.0'
+            });
         };
-      </script>
-      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
-        
+    </script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+
     <nav class="main-nav">
         <div class="main-nav__header main-nav__item">
             <a href="index.html" aria-label="A link to Where Trivia's home page.">
@@ -52,7 +52,8 @@
             <span class="main-nav__share-label">Share</span>
         </div>
         <div class="main-nav__item media-nav__item">
-            <a href="#" id="fb_share_btn" class="main-nav__media-icon" aria-label="A link to where trivia's facebook page">
+            <a href="" id="fb_share_btn" class="main-nav__media-icon"
+                aria-label="A link to where trivia's facebook page">
                 <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook"
                     class="svg-inline--fa fa-facebook fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512">
@@ -72,7 +73,8 @@
             }
         </script>
         <div class="main-nav__item media-nav__item">
-            <a href="#" class="main-nav__media-icon" aria-label="A link to where trivia's twitter page">
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" target="_blank"
+                class="main-nav__media-icon twitter-share-button" aria-label="A link to where trivia's twitter page" data-show-count="false">
                 <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
                     class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512">
@@ -81,10 +83,10 @@
                     </path>
                 </svg>
             </a>
+            <!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
         </div>
         <div class="main-nav__item media-nav__item">
-            <a href="#" class="main-nav__media-icon"
-                aria-label="A link to where trivia's pinterest page">
+            <a href="#" class="main-nav__media-icon" aria-label="A link to where trivia's pinterest page">
                 <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="pinterest"
                     class="svg-inline--fa fa-pinterest fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 496 512">
