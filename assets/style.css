@@ -49,8 +49,9 @@ html {
     transition: background-image 1s ease-in-out;
 }
 body {
-    min-height: 100vh;
+    height: 100vh;
     margin: 0;
+    position: relative;
 }
 .text--dark {
     color: #888;
@@ -72,6 +73,10 @@ main,
 footer {
     padding: 40px 50px;
 }
+footer{
+    position: absolute;
+    bottom: 0;
+}
 @media only screen and (max-width: 989px) {
     main,
     .main-nav,
@@ -80,9 +85,6 @@ footer {
     }
 }
 @media only screen and (max-width: 749px) {
-    footer {
-        text-align: center;
-    }
     .slider__item {
         padding: 0;
     }
@@ -147,7 +149,7 @@ h1,
 
 @media only screen and (max-width: 749px) {
     .slider__track {
-        min-height: 512px;
+        min-height: 450px;
         margin-bottom: 20px;
     }
 }
