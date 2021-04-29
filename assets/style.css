@@ -199,14 +199,14 @@ h1,
     }
 }
 .main__content {
-    background-image: url("continents.png");
+    background-image: url("continents.webp");
     background-position: center top;
     background-repeat: no-repeat;
     background-size: contain;
 }
 @media only screen and (max-width: 749px) {
     .main__content {
-        background-image: url("continents-small.png");
+        background-image: url("continents-small.webp");
     }
 }
 .slider,
